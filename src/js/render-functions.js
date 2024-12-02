@@ -35,6 +35,11 @@ export function renderGallery(images, gallery) {
     )
     .join('');
   gallery.insertAdjacentHTML('beforeend', markup);
+
+  const newItem = gallery.querySelector('.gallery-item');
+  const height = newItem.getBoundingClientRect().height;
+
+  return height;
 }
 
 export function showError(message) {

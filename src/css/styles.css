@@ -42,7 +42,8 @@ body {
   color: #2e2f42;
 }
 
-.submit-btn {
+.submit-btn,
+.load-more {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -52,7 +53,6 @@ body {
   border-radius: 8px;
   border: none;
   padding: 8px 16px;
-  width: 91px;
 
   font-weight: 500;
   font-size: 16px;
@@ -61,8 +61,13 @@ body {
   background: #4e75ff;
 }
 
-.submit-btn:hover {
+.submit-btn:hover,
+.load-more:hover {
   background: #6c8cff;
+}
+
+.load-more {
+  margin: 32px auto;
 }
 
 .loader {
